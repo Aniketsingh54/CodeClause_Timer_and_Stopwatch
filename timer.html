@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="time.png">
+
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="head">Timer</h1>
+    <div class="Timer arrange">
+        <div class="tik">
+            <div class="time">
+            <button><img src="up.png" id="up1"></button>
+            <h1 id="h">00</h1>
+            <button><img src="down.png" id="down1"></button>
+            </div>
+            <h1>Hour</h1>
+        </div>
+        <div class="c">
+            <h1>:</h1>
+        </div>
+        <div class="tik">
+            <div class="time">
+            <button><img src="up.png" id="up2"></button>
+            <h1 id="m">00</h1>  
+            <button><img src="down.png" id="down2"></button>  
+        </div>
+        <h1>Minute</h1>
+        </div>
+        
+        <div class="c">
+            <h1>:</h1>
+        </div>
+        <div class="tik">
+            <div class="time">
+            <button><img src="up.png" id="up3"></button>
+            <h1 id="s">00</h1>
+            <button><img src="down.png" id="down3"></button>
+        </div>
+        <h1 >Second</h1>
+        </div>
+    </div>
+    <div class="btn arrange">
+        <button class="start button">Start Timer</button>
+        <button class="stop button" hidden>Stop Timer</button>
+        <button class="button" id="reset1">Reset</button>
+    </div>
+    <audio id="alarm"></audio>
+    <div class="popup-box" id="hid" style="display: block; visibility: hidden">
+        <div class="transparent-layer"></div>
+        <div class="popup-inner">
+        <div class="popup-msg">Time's UP</div>
+        <button class="next-step-btn" id="reset2">Okay!</button>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+
+</body>
+</html>
